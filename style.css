@@ -983,3 +983,28 @@ object {
 .gallery-caption {
 	display: block;
 }
+/*Omni Gecko Modifications*/
+#page{
+	background:#395321;
+}
+#page #masthead #site-navigation #primary-menu{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	color: #FFF;
+	width: 100%;
+    height: 2em;
+}
+#page #masthead #site-navigation #primary-menu li{
+	display: block;
+}
+#page #masthead #site-navigation #primary-menu li a{
+	color: #FFF;
+	text-decoration: none;
+}
+#page #masthead #site-navigation #primary-menu li a:hover{
+	color: #000;
+}
+#page #content{
+	background: #FFF;
+}
