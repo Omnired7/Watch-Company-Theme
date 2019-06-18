@@ -984,16 +984,32 @@ object {
 	display: block;
 }
 /*Omni Gecko Modifications*/
+/* XS */
+.page{
+	margin-bottom: 0em;
+}
 #page{
 	background:#395321;
+}
+#page > img{
+	display: block;
+	max-width: 84em;
+	margin: auto;
+}
+#page #masthead{
+	display: block;
+	max-width: 84em;
+	margin: auto;
 }
 #page #masthead #site-navigation #primary-menu{
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
+	align-content: center;
 	color: #FFF;
 	width: 100%;
-    height: 2em;
+	font-size: 1.2em;
+    height: 3em;
 }
 #page #masthead #site-navigation #primary-menu li{
 	display: block;
@@ -1006,5 +1022,88 @@ object {
 	color: #000;
 }
 #page #content{
+	max-width: 84em;
 	background: #FFF;
+	margin: auto;
+}
+#colophon .site-info{
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	text-align: center;
+	line-height: 3em;
+	color: #FFF;
+}
+a{
+	color: #395321;
+}
+a:hover{
+	color: #000;
+}
+a:visited{
+	color: #395321;
+}
+/*SM*/
+@media (min-width: 575.98px) {
+}
+/* Small Landscape */
+@media (min-width: 767.98px) {
+}
+/* Medium Tablets */
+@media (min-width: 991.98px) {
+	#page #masthead .site-branding{
+		background: #FFF;
+		display: flex;
+		flex-flow: row nowrap;
+		align-content: center;
+		align-items: center;
+		overflow: hidden;
+	}
+	#page #masthead .site-branding > a{
+		display: block;
+		height: 10em;
+		max-height: 9em;
+		margin-left: 6vw;
+		margin-top: 1vw;
+	}
+	#page #masthead .header-text{
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+		height: 20vw;
+		max-height: 12em;
+		/* Gradient */
+		background: #ffffff; /* Old browsers */
+		background: -moz-linear-gradient(left,  #ffffff 1%, #f8ffe8 22%, #395321 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left,  #ffffff 1%,#f8ffe8 22%,#395321 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right,  #ffffff 1%,#f8ffe8 22%,#395321 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#395321',GradientType=1 ); /* IE6-9 */
+	}
+	#page #masthead .header-text h3{
+		color: #000;
+		text-align: center;
+		margin:unset;
+	}
+	#page #masthead .header-text img{
+		width: 80%;
+	}
+	#page #masthead .header-text p{
+		color: #000;
+		margin:unset;
+		margin-right: 10%;
+		margin-left: 10%;
+	}
+	#colophon .site-info{
+		height: unset;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		text-align: center;
+		color: #FFF;
+	}
+}
+/* Large Desktop & up */
+@media (min-width: 1199.98px) {
+
 }

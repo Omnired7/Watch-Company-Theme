@@ -1,0 +1,32 @@
+/* XS */
+#page #content .random-products{
+    padding: 2em;
+    margin: 2vw;
+    border-top: #395321 solid .2em;
+    border-bottom: #395321 solid .2em;
+}
+#page #content .random-products .products li{
+    display: block;
+}
+/*SM*/
+@media (min-width: 575.98px) {
+}
+/* Small Landscape */
+@media (min-width: 767.98px) {
+    #page #content .random-products .products li{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        margin-bottom: 2em;
+        height: 22em;
+        margin-bottom: unset;
+    }
+}
+/* Medium Tablets */
+@media (min-width: 991.98px) {
+
+}
+/* Large Desktop & up */
+@media (min-width: 1199.98px) {
+
+}

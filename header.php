@@ -22,12 +22,18 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'antiquewatchco' ); ?></a>
-	<img src="<?php echo get_template_directory_uri().'/img/AWC-header.jpg'; ?>" width="100%" height="auto"/>
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
-			<?php
-			// the_custom_logo();//Hide for Desktop /Show on Mobile
-			?>
+			<?php the_custom_logo(); ?>
+			<div class='header-text'>
+				<h3>ANTIQUE WATCH REPAIR SALES, AND RESTORATION FOR OVER 35 YEARS.</h3>
+				<img src="<?php echo get_template_directory_uri().'/img/header-x882x42.png'; ?>" width="100%" height="auto"/>
+				<p>
+					The Antique Watch Company specializes in the restoration of "Can't be fixed" and complicated antique pocket
+					watches and vintage wrist watches including Hamilton, Elgin, Illinois, Omega, Longines, Patek philippe, Rolex,
+					and Vagheron Constantin, just to name a few. All work is guaranteed, and estimates are given free of charge.
+				</p>
+			</div>
 		</div><!-- .site-branding -->
 		<nav id="site-navigation" class="main-navigation">
 			<?php

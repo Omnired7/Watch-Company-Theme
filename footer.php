@@ -13,12 +13,13 @@
 	</div><!-- #content -->
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-					printf( esc_html__( 'Theme: %1$s by %2$s.', 'antiquewatchco' ), 'antiquewatchco','<a href="https://omnigecko.io">OmniGecko Solutions</a>');
-				?>
-			<span class="sep"> | </span>
+			<span>| ANTIQUE WATCH CO. |</span>
+			<span>| P.O. BOX 68 |</span>
+			<span>| FRANKLIN, NC 28744 |</span>
+			<span>| 828-369-9906 |</span>
+			<span>| INFO@ANTIQUEWATCHCO.COM |</span>
+			<div style="color:#000;text-decoration:none;width:100%;" >Designed by Samantha Tincher | <a style="color:#000;text-decoration:none;" href='omnigecko.io'>Created by Omnigecko Solutions</a></div>
+			<div style="width:100%;">| &copy; Antique Watch Company |</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
