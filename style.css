@@ -649,7 +649,6 @@ a:hover, a:active {
 	margin: 0;
 	padding-left: 0;
 }
-
 .main-navigation ul ul {
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	float: left;
@@ -979,7 +978,9 @@ object {
 .gallery-columns-9 .gallery-item {
 	max-width: 11.11%;
 }
-
+.wp-block-gallery{
+	margin: unset;
+}
 .gallery-caption {
 	display: block;
 }
@@ -989,7 +990,7 @@ object {
 	margin-bottom: 0em;
 }
 #page{
-	background:#395321;
+	background:#FFF;
 }
 #page > img{
 	display: block;
@@ -1001,13 +1002,38 @@ object {
 	max-width: 84em;
 	margin: auto;
 }
+#page #masthead .site-branding{
+	background: #FFF;
+}
+#page #masthead .site-branding > a{
+	display: block;
+	margin: auto;
+}
+#page #masthead .site-branding img{
+	display: block;
+	margin: auto;
+}
+#page #masthead .site-branding .header-text{
+	display: none;
+}
+#page #masthead .header-text h3{
+	font-family: ltc-bodoni-175, serif;
+	font-weight: 400;
+	font-style: normal;
+}
+#page #masthead #site-navigation{
+	background:#395321;
+}
 #page #masthead #site-navigation #primary-menu{
-	display: flex;
+	display: none;
 	flex-flow: row wrap;
 	justify-content: space-around;
 	align-content: center;
 	color: #FFF;
 	width: 100%;
+	font-family: 'Gotham Book';
+	/* text-transform: uppercase; */
+	font-weight: normal;
 	font-size: 1.2em;
     height: 3em;
 }
@@ -1021,12 +1047,25 @@ object {
 #page #masthead #site-navigation #primary-menu li a:hover{
 	color: #000;
 }
+#menu-icon img{
+	position: absolute;
+	height: 12vw;
+	width: 16vw;
+	margin-top: 1vw;
+	z-index: 2000;
+}
 #page #content{
 	max-width: 84em;
 	background: #FFF;
 	margin: auto;
 }
+#colophon {
+	max-width: 84em;
+	margin: auto;
+	margin-top: 1em;
+}
 #colophon .site-info{
+	background: #395321;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: space-around;
@@ -1043,16 +1082,50 @@ a:hover{
 a:visited{
 	color: #395321;
 }
+/* Font Styles */
+h1{
+	font-family: ltc-bodoni-175, serif;
+    font-weight: 400;
+	font-style: normal;
+	color: #395321;
+}
+h2{
+	font-family: 'Gotham Book';
+	font-weight: 400;
+    font-style: normal;
+	color: #395321;
+}
+h3{
+	font-family: 'Gotham Book';
+	font-weight: 400;
+    font-style: normal;
+	color: #395321;
+}
+.wp-block-image figcaption{
+	font-
+}
 /*SM*/
 @media (min-width: 575.98px) {
+	#menu-icon img{
+		height: 6vw;
+		width: 8vw;
+		margin-top: 1vw;
+	}
 }
 /* Small Landscape */
 @media (min-width: 767.98px) {
+	#menu-icon img{
+		display: none;
+	}
+	#page #masthead #site-navigation #primary-menu{
+		display: flex;
+	}
+	/* Display navigation as row */
 }
 /* Medium Tablets */
 @media (min-width: 991.98px) {
 	#page #masthead .site-branding{
-		background: #FFF;
+		/* background: #FFF; */
 		display: flex;
 		flex-flow: row nowrap;
 		align-content: center;
@@ -1060,11 +1133,18 @@ a:visited{
 		overflow: hidden;
 	}
 	#page #masthead .site-branding > a{
-		display: block;
 		height: 10em;
 		max-height: 9em;
+		margin: unset;
 		margin-left: 6vw;
 		margin-top: 1vw;
+	}
+	#page #masthead .site-branding img{
+		display: unset;
+		margin: unset;
+	}
+	#page #masthead .site-branding .header-text{
+		display: flex;
 	}
 	#page #masthead .header-text{
 		display: flex;
@@ -1085,6 +1165,7 @@ a:visited{
 		color: #000;
 		text-align: center;
 		margin:unset;
+		font-size: 1.5em;
 	}
 	#page #masthead .header-text img{
 		width: 80%;
@@ -1105,5 +1186,7 @@ a:visited{
 }
 /* Large Desktop & up */
 @media (min-width: 1199.98px) {
-
+	#page #masthead .header-text h3{
+		font-size: 2em;
+	}
 }

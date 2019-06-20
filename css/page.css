@@ -1,0 +1,102 @@
+/* CSS for default pages */
+/* XS */
+#page #content #secondary{
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+#page #content #secondary .widget-title{
+    margin-left: 2vw;   
+}
+#page #content #secondary .widget_product_categories>ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: unset;
+    margin: unset;
+}
+#page #content #secondary .widget_product_categories>ul>li{
+    display: block;
+    border: solid #395321;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    margin-bottom: .5em;
+    list-style: none;
+}
+#page #content #secondary .widget_product_categories>ul>li a{
+    text-decoration: none;
+}
+#page #content #secondary .widget_product_categories>ul>li .children{
+    display: none;
+}
+#page #content #secondary .widget_product_tag_cloud{
+    display: none;
+}
+#page #content #primary .entry-title{
+    margin-left: 2vw; 
+}
+/* Woo Commerce */
+.product{
+    text-align: center;
+}
+/*SM*/
+@media (min-width: 575.98px) {
+}
+/* Small Landscape */
+@media (min-width: 767.98px) {
+    #page #content{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-start;
+    }
+    #page #content #secondary{
+        margin-top: 2em;
+    }
+    #page #content #secondary .widget-title{
+        margin-left: .5em;
+    }
+    #page #content #secondary .widget_search{
+        margin-left: 1em;
+    }
+    #page #content #secondary .widget_search .search-submit{
+        margin-top: 1em;
+    }
+    #page #content #secondary .widget_product_categories>ul{
+        flex-flow: column nowrap;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    #page #content #secondary .widget_product_categories>ul>li .children{
+        display: block;
+    }
+    #page #content #secondary .widget_product_categories>ul>li .children li{
+        display: block;
+        border: unset;
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-top: .5em;
+        padding-bottom: .5em;
+        margin-bottom: .5em;
+        list-style: none;
+    }
+    #page #content #secondary .widget_product_tag_cloud{
+        display: block;
+        max-width: 10em;
+    }
+    #page #content #secondary .widget_product_tag_cloud .tagcloud{
+        display: flex;
+        flex-flow: column wrap;
+        margin-left: 1em;
+    }
+    #page #content #primary{
+        margin-right: .5em;
+    }
+}
+/* Medium Tablets */
+@media (min-width: 991.98px) {
+}
+/* Large Desktop & up */
+@media (min-width: 1199.98px) {
+}

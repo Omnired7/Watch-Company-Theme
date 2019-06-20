@@ -121,9 +121,14 @@ add_action( 'widgets_init', 'antiquewatchco_widgets_init' );
  */
 function antiquewatchco_scripts() {
 	wp_enqueue_style( 'antiquewatchco-style', get_stylesheet_uri() );
-
+	wp_enqueue_script('antiquewatchco-script', get_template_directory_uri().'/js/script.js', array('jquery'), '1.0');
 	wp_enqueue_script( 'antiquewatchco-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
-
+	if( (is_page() && (! is_front_page())) || is_page_template('template-sideless.php') ){//Page & Not Front page
+		wp_enqueue_style('antiquewatchco-page-script', get_template_directory_uri().'/css/page.css', array(), '1.0');
+	}
+	//Format Single page 
+	//Format blog page
+	//Format Post
 	wp_enqueue_script( 'antiquewatchco-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 	if(is_front_page()){
 		wp_enqueue_style( 'antiquewatchco-front-page-style', get_template_directory_uri().'/css/front-page.css', array(), '1.0');
