@@ -15,13 +15,17 @@ if (have_posts()){
     }
 }
 ?>
-<div class='first-banner'>
-    <div class='watch-background' tittle="Image of Restored Antique Watch">
-        <h3>ISN'T IT TIME YOU BOUGHT</h3>
-        <h1>A WATCH?</h1>
-        <img src='<?php echo get_template_directory_uri(); ?>/img/watch-banner-buttonsx481x35.png' alt='Image of Button to Antique Watch Store'/>
+<a href='shop/'>
+    <div class='first-banner'>
+        <div class='watch-background' tittle="Image of Restored Antique Watch">
+            <h3>ISN'T IT TIME YOU BOUGHT</h3>
+            <h1>A WATCH?</h1>
+            <div>
+                <button style='background: #617b49;'>SHOP OUR POCKET WATCHES <img src='<?php echo get_template_directory_uri().'/img/accent-btn-gold.png';?>' height='100%' width='auto';></button><button style='background:rgba(255, 255, 255,.75);'> SEE OUR FULL STORE <img src='<?php echo get_template_directory_uri().'/img/accent-btn-gren.png';?>' height='100%' width='auto';></button>
+            </div>
+        </div>
     </div>
-</div>
+</a>
 <div class='second-banner' title="Image of Antique Watch with ">
     <div class='watch-background' tittle="Image of Antique Watch">
         <h2>HAVE A WATCH THAT’S NOT WORKING CORRECTLY?</h2>
@@ -82,9 +86,8 @@ if (have_posts()){
 <style>
     /* XS */
     #page #content{
-        background:url('<?php echo get_template_directory_uri(); ?>/img/antique-watch-patternx213.jpg');
-        background-repeat: repeat;
-        background-size: 25% auto;
+        /* background:url('<?php echo get_template_directory_uri(); ?>/img/antique-watch-patternx213.jpg'); */
+        background: transparent;
     }
     #page #content .first-banner{
         background: #FFF;
@@ -101,18 +104,40 @@ if (have_posts()){
         text-align: center;
     }
     #page #content .first-banner .watch-background h3{
+            font-family: Algerian;
             font-size: 1.5em;
+            font-weight: 400;
+            color: #4E5A66;
             margin: unset;
             margin-left: 1vw;
     }
     #page #content .first-banner .watch-background h1{
-        font-size: 3em;
+        font-family: Algerian;
+        font-size: 4em;
+        font-weight: 400;
+        color: #4E5A66;
         margin: unset;
         margin-left: 1vw;
+        line-height: 1;
     }
-    #page #content .first-banner .watch-background img{
-            width: 100%;
-            height: auto;
+    #page #content .first-banner .watch-background>div{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    #page #content .first-banner .watch-background>div button{
+        display: block;
+        width: 25.5em;
+        font-family: ltc-bodoni-175, serif;
+        font-weight: 400;
+        font-size: .75em;
+        font-style: normal;
+        margin-bottom: 1em;
+    }
+    #page #content .first-banner .watch-background>div button img{
+        display: block;
+        float: right;
+        height: .75em;
     }
     #page #content .second-banner{
             background: #000;
@@ -167,6 +192,7 @@ if (have_posts()){
         font-family: ltc-bodoni-175, serif;
         font-weight: 400;
         font-style: normal;
+        font-size: 2.5em;
         color: #617b49;
         text-align: center;
         margin-bottom: 2em;
@@ -176,11 +202,25 @@ if (have_posts()){
     }
     /* Small Landscape */
     @media (min-width: 767.98px) {
-        #page #content .first-banner .watch-background img{
+        #page #content .first-banner .watch-background>div{
+            justify-content: flex-start;
+        }
+        #page #content .first-banner .watch-background>div button{
+            width: unset;
+            font-size: 1em;
+            padding-top: .75em;
+            padding-bottom: .75em;
+            margin-left: 1em;
+        }
+        #page #content .first-banner .watch-background>div button img {
+            margin-left: 1em;
+        }
+        #page #content .first-banner .watch-background> img{
             width: 80%;
             margin-left: 10%;
             margin-right: 10%;
         }
+        
     }
     /* Medium Tablets */
     @media (min-width: 991.98px) {
@@ -198,30 +238,22 @@ if (have_posts()){
             text-align: left;
         }
         #page #content .first-banner .watch-background h3{
-            font-family: baskerville-urw, serif;
-            font-weight: 400;
-            font-style: italic;
             font-size: 3em;
-            color: #4E5A66;
             margin: unset;
             margin-left: 2vw;
         }
         #page #content .first-banner .watch-background h1{
-            font-family: itc-benguiat,serif;
-            font-weight: 400;
-            font-style: italic;
-            font-size: 6em;
-            color: #4E5A66;
+            font-size: 7.5em;
             margin: unset;
             margin-left: 2vw;
         }
-        #page #content .first-banner .watch-background img{
+        #page #content .first-banner .watch-background >img{
             width: 50%;
             height: auto;
             margin-left: 2vw;
         }
         #page #content .second-banner .watch-background{
-            height: 21em;
+            height: 20em;
             background: url('<?php echo get_template_directory_uri(); ?>/img/hand-watch-bannerx688x454.jpg');
             background-repeat: no-repeat;
             justify-content: center;

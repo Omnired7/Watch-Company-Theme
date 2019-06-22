@@ -26,7 +26,6 @@ if ( ! function_exists( 'antiquewatchco_setup' ) ) :
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
-
 		/*
 		 * Let WordPress manage the document title.
 		 * By adding theme support, we declare that this theme does not use a
@@ -121,6 +120,8 @@ add_action( 'widgets_init', 'antiquewatchco_widgets_init' );
  */
 function antiquewatchco_scripts() {
 	wp_enqueue_style( 'antiquewatchco-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'antiquewatchco-algerian-font', '//db.onlinewebfonts.com/c/bea3c37a69c86e7b9557985699b866a8?family=Algerian', array(), '1.0');
+	wp_enqueue_style( 'antiquewatchco-alegreya-fonts', 'https://fonts.googleapis.com/css?family=Alegreya+SC:400,500,700,800', array(), '1.0');
 	wp_enqueue_script('antiquewatchco-script', get_template_directory_uri().'/js/script.js', array('jquery'), '1.0');
 	wp_enqueue_script( 'antiquewatchco-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 	if( (is_page() && (! is_front_page())) || is_page_template('template-sideless.php') ){//Page & Not Front page

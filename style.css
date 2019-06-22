@@ -615,6 +615,7 @@ textarea {
 --------------------------------------------------------------*/
 a {
 	color: royalblue;
+	text-decoration: none;
 }
 
 a:visited {
@@ -998,8 +999,8 @@ object {
 	margin: auto;
 }
 #page #masthead{
+	background: #fff;
 	display: block;
-	max-width: 84em;
 	margin: auto;
 }
 #page #masthead .site-branding{
@@ -1017,9 +1018,15 @@ object {
 	display: none;
 }
 #page #masthead .header-text h3{
-	font-family: ltc-bodoni-175, serif;
+	font-family: 'Alegreya SC', serif;
 	font-weight: 400;
 	font-style: normal;
+}
+#page #masthead .header-text p{
+	font-family: itc-benguiat,serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: .9em;
 }
 #page #masthead #site-navigation{
 	background:#395321;
@@ -1031,10 +1038,11 @@ object {
 	align-content: center;
 	color: #FFF;
 	width: 100%;
-	font-family: 'Gotham Book';
-	/* text-transform: uppercase; */
-	font-weight: normal;
-	font-size: 1.2em;
+	font-family: ltc-bodoni-175, serif;
+    font-weight: 400;
+	font-style: normal;
+	text-transform: uppercase;
+	font-size: .95em;
     height: 3em;
 }
 #page #masthead #site-navigation #primary-menu li{
@@ -1060,13 +1068,13 @@ object {
 	margin: auto;
 }
 #colophon {
-	max-width: 84em;
+	background: #395321;
 	margin: auto;
-	margin-top: 1em;
 }
 #colophon .site-info{
-	background: #395321;
 	display: flex;
+	max-width: 84em;
+	margin: auto;
 	flex-flow: column nowrap;
 	justify-content: space-around;
 	text-align: center;
@@ -1084,32 +1092,43 @@ a:visited{
 }
 /* Font Styles */
 h1{
-	font-family: ltc-bodoni-175, serif;
+    font-family: 'Alegreya SC', serif;
     font-weight: 400;
-	font-style: normal;
+    font-style: normal;
 	color: #395321;
 }
 h2{
-	font-family: 'Gotham Book';
-	font-weight: 400;
+	font-family: 'Alegreya SC', serif;
+    font-weight: 400;
     font-style: normal;
 	color: #395321;
 }
 h3{
-	font-family: 'Gotham Book';
-	font-weight: 400;
+	font-family: 'Alegreya SC', serif;
+    font-weight: 400;
     font-style: normal;
 	color: #395321;
 }
+p{
+	font-family: itc-benguiat,serif;
+    font-weight: 400;
+    font-style: normal;
+}
 .wp-block-image figcaption{
-	font-
+	font-size: 1em;
+}
+.button{
+	font-family: itc-benguiat,serif;
+    font-weight: 700;
+	font-style: bold;
+	text-align: center;
 }
 /*SM*/
 @media (min-width: 575.98px) {
 	#menu-icon img{
 		height: 6vw;
-		width: 8vw;
-		margin-top: 1vw;
+		width : 8vw;
+		margin-top : 1vw;
 	}
 }
 /* Small Landscape */
@@ -1120,13 +1139,26 @@ h3{
 	#page #masthead #site-navigation #primary-menu{
 		display: flex;
 	}
-	/* Display navigation as row */
 }
 /* Medium Tablets */
 @media (min-width: 991.98px) {
+	#page #masthead{
+		/* Gradient */
+		background: #ffffff; /* Old browsers */
+		background: -moz-linear-gradient(left,  #ffffff 1%, #f8ffe8 22%, #395321 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left,  #ffffff 1%,#f8ffe8 22%,#395321 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right,  #ffffff 1%,#f8ffe8 22%,#395321 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#395321',GradientType=1 ); /* IE6-9 */
+	}
+	#page #masthead .menu-main-container{
+		margin: auto;
+		max-width: 76em;
+	}
 	#page #masthead .site-branding{
-		/* background: #FFF; */
+		background: transparent;
 		display: flex;
+		max-width: 84em;
+		margin: auto;
 		flex-flow: row nowrap;
 		align-content: center;
 		align-items: center;
@@ -1137,7 +1169,6 @@ h3{
 		max-height: 9em;
 		margin: unset;
 		margin-left: 6vw;
-		margin-top: 1vw;
 	}
 	#page #masthead .site-branding img{
 		display: unset;
@@ -1154,12 +1185,6 @@ h3{
 		align-items: center;
 		height: 20vw;
 		max-height: 12em;
-		/* Gradient */
-		background: #ffffff; /* Old browsers */
-		background: -moz-linear-gradient(left,  #ffffff 1%, #f8ffe8 22%, #395321 100%); /* FF3.6-15 */
-		background: -webkit-linear-gradient(left,  #ffffff 1%,#f8ffe8 22%,#395321 100%); /* Chrome10-25,Safari5.1-6 */
-		background: linear-gradient(to right,  #ffffff 1%,#f8ffe8 22%,#395321 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#395321',GradientType=1 ); /* IE6-9 */
 	}
 	#page #masthead .header-text h3{
 		color: #000;
@@ -1176,6 +1201,9 @@ h3{
 		margin-right: 10%;
 		margin-left: 10%;
 	}
+	#colophon {
+		margin-top: 1em;
+	}
 	#colophon .site-info{
 		height: unset;
 		flex-flow: row wrap;
@@ -1187,6 +1215,6 @@ h3{
 /* Large Desktop & up */
 @media (min-width: 1199.98px) {
 	#page #masthead .header-text h3{
-		font-size: 2em;
+		font-size: 1.75em;
 	}
 }
