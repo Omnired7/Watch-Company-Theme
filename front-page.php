@@ -197,6 +197,15 @@ if (have_posts()){
         text-align: center;
         margin-bottom: 2em;
     }
+    /* Woo Comerce */
+    .products{
+        font-size: 1.3em;
+    }
+    .products h2{
+        font-family: itc-benguiat,serif;
+        font-weight: 700;
+        font-style: bold;
+    }
     /*SM*/
     @media (min-width: 575.98px) {
     }

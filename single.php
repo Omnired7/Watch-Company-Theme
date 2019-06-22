@@ -14,6 +14,9 @@
             ?>
         </div>
         <style>
+            #page #content{
+                background: unset;
+            }
             #page #content>h1{
                 text-align: center;
             }

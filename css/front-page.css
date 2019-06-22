@@ -1,9 +1,8 @@
 /* XS */
 #page #content .random-products{
-    padding: 2em;
     margin: 2vw;
-    border-top: #395321 solid .2em;
-    border-bottom: #395321 solid .2em;
+    border-top: #77a464 solid .1em;
+    border-bottom: #77a464 solid .1em;
 }
 #page #content .random-products .products li{
     display: block;

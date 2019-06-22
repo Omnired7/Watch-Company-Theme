@@ -14,9 +14,8 @@
 		@media (min-width: 991.98px) {
         #page {
 			background:url('<?php echo get_template_directory_uri(); ?>/img/antique-watch-patternx213.jpg');
-			background-repeat: repeat;
-			background-size: 13% auto;
-			background-position: right;
+			background-repeat: round;
+			background-color: #DFE5DB;
 		}
 	</style>
 	</div><!-- #content -->

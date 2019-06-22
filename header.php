@@ -17,14 +17,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<meta author="Emmanuel Porfirio | Omnigecko Solutions">
-	<style>
-		@font-face {
-			font-family: 'Gotham Book';
-			font-style: normal;
-			font-weight: normal;
-			src: local('Gotham Book'), url('<?php echo get_template_directory_uri()."/fonts/GothamBook.woff"; ?>') format('woff');
-		}
-	</style>
 	<link rel="stylesheet" href="https://use.typekit.net/xou8ckw.css">
 	<?php wp_head(); ?>
 </head>
