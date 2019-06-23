@@ -32,6 +32,8 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
+<a href='#page' id='to-top' style='display:none;position:fixed;width:5em;right:0em;bottom:0em;'>
+	<img src="<?php echo get_template_directory_uri().'/img/to_topx106.png'; ?>" style='width:100%;height:auto;'/>
+</a>
 </body>
 </html>

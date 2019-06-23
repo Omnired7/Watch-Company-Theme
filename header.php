@@ -16,7 +16,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-	<meta author="Emmanuel Porfirio | Omnigecko Solutions">
+	<meta author="Emmanuel Porfirio | Omni Gecko Solutions">
 	<link rel="stylesheet" href="https://use.typekit.net/xou8ckw.css">
 	<?php wp_head(); ?>
 </head>

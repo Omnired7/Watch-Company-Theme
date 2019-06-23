@@ -5,7 +5,7 @@
                 while ( have_posts() ) :
                     the_post(); ?>
                         <div><?php the_title('<h1>', '</h1>'); the_date('','<h3>', '</h3>');?></div>
-                        <?php the_post_thumbnail('medium',array('style' => 'float:left;margin-right:1em;'));
+                        <?php the_post_thumbnail('full-size',array('style' => 'float:left;margin-right:1em;'));
                         the_content();
                 endwhile; // End of the loop.
             else: ?>

@@ -40,4 +40,13 @@ jQuery(document).ready(function($){
             clearMobile(nav, navCont, navFont);
         }
     });
+    $(window).scroll(function(){
+        var winHeight = $(window).height()
+        var winScroll = $(window).scrollTop()
+        if(winScroll > winHeight){
+            $('#to-top').css('display','block');
+        }else{
+            $('#to-top').css('display','none');
+        }
+    });
 });

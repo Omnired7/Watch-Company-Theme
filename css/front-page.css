@@ -1,8 +1,6 @@
 /* XS */
 #page #content .random-products{
     margin: 2vw;
-    border-top: #77a464 solid .1em;
-    border-bottom: #77a464 solid .1em;
 }
 #page #content .random-products .products li{
     display: block;
@@ -12,6 +10,10 @@
 }
 /* Small Landscape */
 @media (min-width: 767.98px) {
+    #page #content .random-products{
+        border-top: #77a464 solid .1em;
+        border-bottom: #77a464 solid .1em;
+    }
     #page #content .random-products .products li{
         display: flex;
         flex-flow: column nowrap;

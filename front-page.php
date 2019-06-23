@@ -134,6 +134,9 @@ if (have_posts()){
         font-style: normal;
         margin-bottom: 1em;
     }
+    #page #content .first-banner .watch-background>div button:hover{
+        cursor: pointer;
+    }
     #page #content .first-banner .watch-background>div button img{
         display: block;
         float: right;
@@ -200,11 +203,15 @@ if (have_posts()){
     /* Woo Comerce */
     .products{
         font-size: 1.3em;
+        text-align: center;
     }
     .products h2{
         font-family: itc-benguiat,serif;
         font-weight: 700;
         font-style: bold;
+    }
+    .woocommerce-loop-product__title{
+        font-size: .90em !important;
     }
     /*SM*/
     @media (min-width: 575.98px) {
@@ -229,7 +236,13 @@ if (have_posts()){
             margin-left: 10%;
             margin-right: 10%;
         }
-        
+        /* Woo Comerce */
+        .products{
+            text-align: left;
+        }
+        .woocommerce-loop-product__title{
+            font-size: .85em !important;
+        }
     }
     /* Medium Tablets */
     @media (min-width: 991.98px) {
@@ -295,11 +308,14 @@ if (have_posts()){
             margin-right: 2vw;
         }
         #page #content .third-banner .watch-guarante span{
-            font-size: 1.5em;
+            font-size: 1.25em;
         }
     }
     /* Large Desktop & up */
     @media (min-width: 1199.98px) {
+        #page #content .third-banner .watch-guarante span{
+            font-size: 1.5em;
+        }
     }
 </style>
 <?php
