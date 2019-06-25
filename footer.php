@@ -25,7 +25,7 @@
 			<span>| P.O. BOX 68 FRANKLIN, NC 28744 |</span>
 			<span>| 828-369-9906 |</span>
 			<span>| INFO@ANTIQUEWATCHCO.COM |</span>
-			<div style=";text-decoration:none;width:100%;" >Designed by Samantha Goggans | <a style="color:#fff;text-decoration:none;" href='www.omnigecko.io'>Developed by Omnigecko Solutions</a></div>
+			<div style=";text-decoration:none;width:100%;" >Designed by Samantha Goggans | <a style="color:#fff;text-decoration:none;" href='www.omnigecko.io'>Developed by Omni Gecko Solutions</a></div>
 			<div style="width:100%;">| &copy; Antique Watch Company |</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

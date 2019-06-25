@@ -1123,6 +1123,11 @@ p{
 	font-style: bold;
 	text-align: center;
 }
+.is-style-squared .wp-block-button__link{
+	font-family: itc-benguiat,serif;
+    font-weight: 400;
+    font-style: normal;
+}
 /*SM*/
 @media (min-width: 575.98px) {
 	#menu-icon img{
