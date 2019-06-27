@@ -168,3 +168,27 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+?>
+<?php
+	// Modified Woocommerce
+	add_shortcode( 'antiquewatchco_in_stock_products', 'bbloomer_in_stock_products_shortcode' );
+   
+	function bbloomer_in_stock_products_shortcode() {
+	   $args = array(
+		  'post_type' => 'product',
+		  'posts_per_page' => -1,
+		  'post_status' => 'publish',
+		  'meta_query' => array(
+			 array(
+				'key' => '_stock',
+				'value' => 0,
+				'compare' => '>'
+			 )
+		  ),
+		  'fields' => 'ids',
+	   );
+	   $product_ids = get_posts( $args ); 
+	   $product_ids = implode( ",", $product_ids );
+	   return do_shortcode("[products limit='4' ids='$product_ids' order='DESC' orderby='rand' ]");
+	}
+?>
