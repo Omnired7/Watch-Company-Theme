@@ -128,9 +128,11 @@ function antiquewatchco_scripts() {
 		wp_enqueue_style('antiquewatchco-page-script', get_template_directory_uri().'/css/page.css', array(), '1.0');
 		wp_enqueue_script('antiqewatchco-products-page-script', get_template_directory_uri() . '/js/products-page.js', array('jquery'), '1.0');
 	}
-	//Format Single page 
-	//Format blog page
-	//Format Post
+	//IE Checks
+	global $is_IE;
+	if ($is_IE){
+		 wp_enqueue_style( 'whisper-room-ie-style', get_template_directory_uri().'/css/ie-styles.css', null, '1.0');
+	}
 	wp_enqueue_script( 'antiquewatchco-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 	if(is_front_page()){
 		wp_enqueue_style( 'antiquewatchco-front-page-style', get_template_directory_uri().'/css/front-page.css', array(), '1.0');
@@ -189,6 +191,6 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	   );
 	   $product_ids = get_posts( $args ); 
 	   $product_ids = implode( ",", $product_ids );
-	   return do_shortcode("[products limit='6' ids='$product_ids' order='DESC' orderby='rand' ]");
+	   return do_shortcode("[products limit='4' ids='$product_ids' order='DESC' orderby='rand' ]");
 	}
 ?>

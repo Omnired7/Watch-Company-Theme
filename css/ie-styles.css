@@ -1,0 +1,12 @@
+@media all and (min-width : 991.98px){
+    #page #masthead .site-branding img{
+        height: 100%;
+        width: auto;
+    }
+    #page #masthead .site-branding .header-text{
+        display: block;
+    }
+    #page #masthead .header-text h3{
+        display: inline-block;
+    }
+}

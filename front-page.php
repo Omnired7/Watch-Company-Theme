@@ -26,16 +26,18 @@ if (have_posts()){
         </div>
     </div>
 </a>
-<div class='second-banner' title="Image of Antique Watch with ">
-    <div class='watch-background' tittle="Image of Antique Watch">
-        <h2>HAVE A WATCH THAT’S NOT WORKING CORRECTLY?</h2>
-        <p>
-            The Antique Watch Company® specializes in the restoration of “can’t be fixed” and complicated antique pocket watches and vintage wrist watches including 
-            Hamilton, Elgin, Illinois, Omega, Longines, Patek Phillippe, Rolex, and Vacheron Constantin, just to name a few.
-            All work is guaranteed, and estimates are given free of charge.
-        </p>
+<a href='repair/'>
+    <div class='second-banner' title="Image of Antique Watch with ">
+        <div class='watch-background' tittle="Image of Antique Watch">
+            <h2>HAVE A WATCH THAT’S NOT WORKING CORRECTLY?</h2>
+            <p>
+                The Antique Watch Company® specializes in the restoration of “can’t be fixed” and complicated antique pocket watches and vintage wrist watches including 
+                Hamilton, Elgin, Illinois, Omega, Longines, Patek Phillippe, Rolex, and Vacheron Constantin, just to name a few.
+                All work is guaranteed, and estimates are given free of charge.
+            </p>
+        </div>
     </div>
-</div>
+</a>
 <div class='third-banner'>
     <div class='watch-guarante'>
         <h2>
