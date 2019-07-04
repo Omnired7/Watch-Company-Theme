@@ -191,6 +191,6 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	   );
 	   $product_ids = get_posts( $args ); 
 	   $product_ids = implode( ",", $product_ids );
-	   return do_shortcode("[products limit='4' ids='$product_ids' order='DESC' orderby='rand' ]");
+	   return do_shortcode("[products limit='6' ids='$product_ids' order='DESC' orderby='rand' class='random-products']");
 	}
 ?>

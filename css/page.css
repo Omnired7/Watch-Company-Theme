@@ -209,6 +209,9 @@
     .widget_search{
         text-align: left;
     }
+    .woocommerce div.product div.images img{
+        max-width: 20em;
+    }
 }
 /* Medium Tablets */
 @media (min-width: 991.98px) {
