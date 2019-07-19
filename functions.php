@@ -119,7 +119,7 @@ add_action( 'widgets_init', 'antiquewatchco_widgets_init' );
  * Enqueue scripts and styles.
  */
 function antiquewatchco_scripts() {
-	wp_enqueue_style( 'antiquewatchco-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'antiquewatchco-style', get_stylesheet_uri(), array(), '1.0' );
 	wp_enqueue_style( 'antiquewatchco-algerian-font', '//db.onlinewebfonts.com/c/bea3c37a69c86e7b9557985699b866a8?family=Algerian', array(), '1.0');
 	wp_enqueue_style( 'antiquewatchco-alegreya-fonts', 'https://fonts.googleapis.com/css?family=Alegreya+SC:400,500,700,800', array(), '1.0');
 	wp_enqueue_script('antiquewatchco-script', get_template_directory_uri().'/js/script.js', array('jquery'), '1.0');
@@ -191,6 +191,6 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	   );
 	   $product_ids = get_posts( $args ); 
 	   $product_ids = implode( ",", $product_ids );
-	   return do_shortcode("[products limit='6' ids='$product_ids' order='DESC' orderby='rand' class='random-products']");
+	   return do_shortcode("[products limit='6' columns='6' ids='$product_ids' order='DESC' orderby='rand' class='random-products']");
 	}
 ?>

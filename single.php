@@ -29,6 +29,10 @@
             }
             /* Small Landscape */
             @media (min-width: 767.98px) {
+                /* .woocommerce div.product div.images img{
+                    max-width: 20em !important;
+                    margin: auto !important ;
+                } */
             }
             /* Medium Tablets */
             @media (min-width: 991.98px) {

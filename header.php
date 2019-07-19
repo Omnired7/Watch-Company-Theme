@@ -8,7 +8,6 @@
  *
  * @package antiquewatchco
  */
-
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -29,6 +28,7 @@
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
 			<?php the_custom_logo(); ?>
+			<img src="<?php echo get_template_directory_uri().'/img/mobile-banner1024x200.png'; ?>" class='mobile-banner'/>
 			<div class='header-text'>
 				<h3>Antique watch repair sales, and restoration for over 35 years.</h3>
 				<img src="<?php echo get_template_directory_uri().'/img/header-x882x42.png'; ?>" width="100%" height="auto"/>

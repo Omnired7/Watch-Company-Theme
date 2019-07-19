@@ -15,17 +15,16 @@ if (have_posts()){
     }
 }
 ?>
-<a href='shop/'>
-    <div class='first-banner'>
-        <div class='watch-background' tittle="Image of Restored Antique Watch">
-            <h3>ISN'T IT TIME YOU BOUGHT</h3>
-            <h1>A WATCH?</h1>
-            <div>
-                <button style='background: #617b49;'>SHOP OUR POCKET WATCHES <img src='<?php echo get_template_directory_uri().'/img/accent-btn-gold.png';?>' height='100%' width='auto';></button><button style='background:rgba(255, 255, 255,.75);'> SEE OUR FULL STORE <img src='<?php echo get_template_directory_uri().'/img/accent-btn-gren.png';?>' height='100%' width='auto';></button>
-            </div>
+<div class='first-banner'>
+    <div class='watch-background' tittle="Image of Restored Antique Watch">
+        <h3>ISN'T IT TIME YOU BOUGHT</h3>
+        <h1>A WATCH?</h1>
+        <div>
+            <a href='<?php echo get_home_url(); ?>/product-category/pocket-watches/'><button style='background: #617b49;color:#FFF;'>SHOP OUR POCKET WATCHES <img src='<?php echo get_template_directory_uri().'/img/accent-btn-gold.png';?>' height='100%' width='auto';></button></a>
+            <a href='<?php echo get_home_url(); ?>/shop'><button style='background:rgba(255, 255, 255,.75);'> SEE OUR FULL STORE <img src='<?php echo get_template_directory_uri().'/img/accent-btn-gren.png';?>' height='100%' width='auto';></button></a>
         </div>
     </div>
-</a>
+</div>
 <a href='repair/'>
     <div class='second-banner' title="Image of Antique Watch with ">
         <div class='watch-background' tittle="Image of Antique Watch">
@@ -110,6 +109,7 @@ if (have_posts()){
             font-size: 1.5em;
             font-weight: 400;
             color: #4E5A66;
+            opacity: .8;
             margin: unset;
             margin-left: 1vw;
     }
@@ -118,6 +118,7 @@ if (have_posts()){
         font-size: 4em;
         font-weight: 400;
         color: #4E5A66;
+        opacity: .8;
         margin: unset;
         margin-left: 1vw;
         line-height: 1;
@@ -134,6 +135,7 @@ if (have_posts()){
         font-weight: 400;
         font-size: .75em;
         font-style: normal;
+        color: rgb(97, 123, 73);
         margin-bottom: 1em;
     }
     #page #content .first-banner .watch-background>div button:hover{

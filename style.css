@@ -1007,8 +1007,11 @@ object {
 	background: #FFF;
 }
 #page #masthead .site-branding > a{
-	display: block;
+	display: none;
 	margin: auto;
+}
+#page #masthead .site-branding .mobile-banner{
+	display: block;
 }
 #page #masthead .site-branding img{
 	display: block;
@@ -1061,6 +1064,7 @@ object {
 	height: 12vw;
 	width: 16vw;
 	margin-top: 1vw;
+	right: 1vw;
 	z-index: 2000;
 }
 #page #content{
@@ -1139,6 +1143,12 @@ p{
 /* Small Landscape */
 @media (min-width: 767.98px) {
 	#menu-icon img{
+		display: none;
+	}
+	#page #masthead .site-branding > a{
+		display: block;
+	}
+	#page #masthead .site-branding .mobile-banner{
 		display: none;
 	}
 	#page #masthead #site-navigation #primary-menu{
