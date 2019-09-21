@@ -125,6 +125,7 @@
     #page #content #secondary{
         width: 32em;
         margin-top: 2em;
+        margin-right: 2em;
     }
     #page #content #secondary .widget-title{
         margin-left: .5em;

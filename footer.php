@@ -24,7 +24,9 @@
 		elseif (is_product()): ?>
 			<style>
 				#page #content .blog-contain {
-					max-width: 55em;
+					display: block;
+					padding-left:1em;
+					padding-right:1em;
 					margin: auto;
 				}
 			</style>

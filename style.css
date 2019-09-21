@@ -1202,7 +1202,7 @@ p{
 		align-content: center;
 		align-items: center;
 		height: 20vw;
-		max-height: 12em;
+		max-height: 14em;
 	}
 	#page #masthead .header-text h3{
 		color: #000;
@@ -1214,6 +1214,11 @@ p{
 		width: 80%;
 	}
 	#page #masthead .header-text p{
+		font-family: 'Alegreya SC', serif;
+		font-weight: 400;
+		font-style: normal;
+		font-size: 1.2em;
+		padding-bottom: 1em;
 		color: #000;
 		margin:unset;
 		margin-right: 10%;

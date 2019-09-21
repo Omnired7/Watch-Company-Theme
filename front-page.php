@@ -30,8 +30,8 @@ if (have_posts()){
         <div class='watch-background' tittle="Image of Antique Watch">
             <h2>HAVE A WATCH THAT’S NOT WORKING CORRECTLY?</h2>
             <p>
-                The Antique Watch Company® specializes in the restoration of “can’t be fixed” and complicated antique pocket watches and vintage wrist watches including 
-                Hamilton, Elgin, Illinois, Omega, Longines, Patek Phillippe, Rolex, and Vacheron Constantin, just to name a few.
+                The Antique Watch Company Specializes in the restoration of "can't be fixed" and complicated antique pocket watches
+                including Hamilton, Elgin, Illinois, Omega, Longines, Patek Philippe, Rolex, and Vacheron Constantin, just to name a few.
                 All work is guaranteed, and estimates are given free of charge.
             </p>
         </div>
@@ -50,7 +50,7 @@ if (have_posts()){
             or quality of the watch. 
         </p>
         <p>
-            Unlike auction sites, or most of the other antique watch sites on the www, our watches are fully guaranteed for 12 months from the date of purchase.
+            Unlike auction sites, or most of the other antique watch sites on the internet, our watches are fully guaranteed for 12 months from the date of purchase.
             Every antique watch has been thoroughly examined, cleaned, and serviced. With The Antique Watch Company®, you may rest assured that your antique watch will arrive in working order.
             Where else could you buy an 80 year old watch and be GUARANTEED it will run like it did the day it was made?
         </p>
