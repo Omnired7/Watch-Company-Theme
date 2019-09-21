@@ -124,7 +124,7 @@ function antiquewatchco_scripts() {
 	wp_enqueue_style( 'antiquewatchco-alegreya-fonts', 'https://fonts.googleapis.com/css?family=Alegreya+SC:400,500,700,800', array(), '1.3');
 	wp_enqueue_script('antiquewatchco-script', get_template_directory_uri().'/js/script.js', array('jquery'), '1.3');
 	wp_enqueue_script( 'antiquewatchco-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
-	if( (is_page() && (! is_front_page())) || is_page_template('template-sideless.php') ){//Page & Not Front page
+	if( (is_page() && (! is_front_page())) || is_page_template('template-sideless.php') || is_search()){//Page & Not Front page
 		wp_enqueue_style('antiquewatchco-page-script', get_template_directory_uri().'/css/page.css', array(), '1.3');
 		wp_enqueue_script('antiqewatchco-products-page-script', get_template_directory_uri() . '/js/products-page.js', array('jquery'), '1.3');
 	}
