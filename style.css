@@ -1178,17 +1178,20 @@ p{
 		max-width: 84em;
 		margin: auto;
 		flex-flow: row nowrap;
-		align-content: center;
-		align-items: center;
+		align-content: flex-start;
+		align-items: flex-start;
 		overflow: hidden;
 	}
 	#page #masthead .site-branding > a{
-		height: 10em;
+		width: 45em;
+		height: auto;
 		max-height: 9em;
 		margin: unset;
-		margin-left: 6vw;
+		margin-left: 1vw;
 	}
 	#page #masthead .site-branding img{
+		width:100%;
+		height: auto;
 		display: unset;
 		margin: unset;
 	}
