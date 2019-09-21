@@ -14,6 +14,13 @@
             ?>
         </div>
         <style>
+            .woocommerce div.product div.images .flex-control-thumbs{
+                display: flex;
+                flex-flow: row wrap;
+            }
+            .woocommerce div.product div.images .flex-control-thumbs li{
+                width: 16.65%;
+            }
             #page #content{
                 background: unset;
             }
