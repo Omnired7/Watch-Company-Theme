@@ -119,23 +119,23 @@ add_action( 'widgets_init', 'antiquewatchco_widgets_init' );
  * Enqueue scripts and styles.
  */
 function antiquewatchco_scripts() {
-	wp_enqueue_style( 'antiquewatchco-style', get_stylesheet_uri(), array(), '1.2' );
-	wp_enqueue_style( 'antiquewatchco-algerian-font', '//db.onlinewebfonts.com/c/bea3c37a69c86e7b9557985699b866a8?family=Algerian', array(), '1.2');
-	wp_enqueue_style( 'antiquewatchco-alegreya-fonts', 'https://fonts.googleapis.com/css?family=Alegreya+SC:400,500,700,800', array(), '1.2');
-	wp_enqueue_script('antiquewatchco-script', get_template_directory_uri().'/js/script.js', array('jquery'), '1.2');
+	wp_enqueue_style( 'antiquewatchco-style', get_stylesheet_uri(), array(), '1.3' );
+	wp_enqueue_style( 'antiquewatchco-algerian-font', '//db.onlinewebfonts.com/c/bea3c37a69c86e7b9557985699b866a8?family=Algerian', array(), '1.3');
+	wp_enqueue_style( 'antiquewatchco-alegreya-fonts', 'https://fonts.googleapis.com/css?family=Alegreya+SC:400,500,700,800', array(), '1.3');
+	wp_enqueue_script('antiquewatchco-script', get_template_directory_uri().'/js/script.js', array('jquery'), '1.3');
 	wp_enqueue_script( 'antiquewatchco-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 	if( (is_page() && (! is_front_page())) || is_page_template('template-sideless.php') ){//Page & Not Front page
-		wp_enqueue_style('antiquewatchco-page-script', get_template_directory_uri().'/css/page.css', array(), '1.2');
-		wp_enqueue_script('antiqewatchco-products-page-script', get_template_directory_uri() . '/js/products-page.js', array('jquery'), '1.2');
+		wp_enqueue_style('antiquewatchco-page-script', get_template_directory_uri().'/css/page.css', array(), '1.3');
+		wp_enqueue_script('antiqewatchco-products-page-script', get_template_directory_uri() . '/js/products-page.js', array('jquery'), '1.3');
 	}
 	//IE Checks
 	global $is_IE;
 	if ($is_IE){
-		 wp_enqueue_style( 'whisper-room-ie-style', get_template_directory_uri().'/css/ie-styles.css', null, '1.2');
+		 wp_enqueue_style( 'whisper-room-ie-style', get_template_directory_uri().'/css/ie-styles.css', null, '1.3');
 	}
 	wp_enqueue_script( 'antiquewatchco-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 	if(is_front_page()){
-		wp_enqueue_style( 'antiquewatchco-front-page-style', get_template_directory_uri().'/css/front-page.css', array(), '1.2');
+		wp_enqueue_style( 'antiquewatchco-front-page-style', get_template_directory_uri().'/css/front-page.css', array(), '1.3');
 	}
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
